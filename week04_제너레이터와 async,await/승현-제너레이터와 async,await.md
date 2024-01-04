@@ -184,6 +184,7 @@ console.log(generator.next()); { value: undefined, done: true }
 
 > 이터레이터의 next 메서드와 달리 제너레이터 객체의 next 메서드에는 인수를 전달할 수 있습니다. 제너레이터 객체의 next 메서드에 전달한 인수는 제너레이터 함수의 yield 표현식을 할당받는 변수에 할당됩니다.
 > yield 표현식을 할당받은 변수에 yield 표현식의 평가 결과가 할당되지 않는 것에 주의하기 바랍니다.
+
 ```js
 function* genFunc() {
   const x = yield 1;
